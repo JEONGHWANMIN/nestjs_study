@@ -7,9 +7,11 @@ import {
   ParseIntPipe,
   Patch,
   Post,
+  UseGuards,
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
 import { BoardStatus } from './board-status.enum';
 import { Board } from './board.entity';
 import { BoardsService } from './boards.service';
@@ -23,6 +25,7 @@ export class BoardsController {
   //  Method : @Get @Post @Petch @Delete
 
   @Get()
+  @UseGuards(AuthGuard())
   getAllBoard(): Promise<Board[]> {
     return this.boardsService.getAllBoards();
   }
