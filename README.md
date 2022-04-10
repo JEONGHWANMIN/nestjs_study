@@ -557,3 +557,9 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikh3YW5NaW4yIiwiaWF0IjoxNjQ
 express → winston이란 모듈을 사용해서 로그를 처리한다.
 
 nestjs → built-in 된 logger 클래스가 있다.
+
+reference :
+
+https://wikidocs.net/book/7059
+
+https://www.youtube.com/watch?v=3JminDpCJNE
